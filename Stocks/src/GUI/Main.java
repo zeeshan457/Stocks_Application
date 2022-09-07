@@ -27,8 +27,8 @@ public class Main extends javax.swing.JFrame {
     private void initComponents() {
 
         Title_P = new javax.swing.JPanel();
-        stocks_TF = new javax.swing.JTextField();
-        date_TF = new javax.swing.JTextField();
+        date_L = new javax.swing.JLabel();
+        stocks_L1 = new javax.swing.JLabel();
         Main_P = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -36,36 +36,34 @@ public class Main extends javax.swing.JFrame {
 
         Title_P.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        stocks_TF.setFont(new java.awt.Font("Dialog", 2, 24)); // NOI18N
-        stocks_TF.setText("Stocks");
+        date_L.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        date_L.setText("Date");
 
-        date_TF.setText("Date ");
+        stocks_L1.setFont(new java.awt.Font("Dialog", 2, 36)); // NOI18N
+        stocks_L1.setText("Stocks");
 
         javax.swing.GroupLayout Title_PLayout = new javax.swing.GroupLayout(Title_P);
         Title_P.setLayout(Title_PLayout);
         Title_PLayout.setHorizontalGroup(
             Title_PLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Title_PLayout.createSequentialGroup()
-                .addContainerGap(911, Short.MAX_VALUE)
-                .addComponent(date_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(464, Short.MAX_VALUE)
+                .addComponent(stocks_L1)
+                .addGap(283, 283, 283)
+                .addComponent(date_L, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
-            .addGroup(Title_PLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Title_PLayout.createSequentialGroup()
-                    .addContainerGap(483, Short.MAX_VALUE)
-                    .addComponent(stocks_TF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(483, Short.MAX_VALUE)))
         );
         Title_PLayout.setVerticalGroup(
             Title_PLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Title_PLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(date_TF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(39, Short.MAX_VALUE))
-            .addGroup(Title_PLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Title_PLayout.createSequentialGroup()
-                    .addContainerGap(15, Short.MAX_VALUE)
-                    .addComponent(stocks_TF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(14, Short.MAX_VALUE)))
+                .addGroup(Title_PLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Title_PLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(date_L))
+                    .addGroup(Title_PLayout.createSequentialGroup()
+                        .addGap(16, 16, 16)
+                        .addComponent(stocks_L1)))
+                .addContainerGap(21, Short.MAX_VALUE))
         );
 
         Main_P.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -100,7 +98,7 @@ public class Main extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(Title_P, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(449, Short.MAX_VALUE))
+                .addContainerGap(434, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                     .addContainerGap(83, Short.MAX_VALUE)
@@ -149,7 +147,7 @@ public class Main extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Main_P;
     private javax.swing.JPanel Title_P;
-    private javax.swing.JTextField date_TF;
-    private javax.swing.JTextField stocks_TF;
+    private javax.swing.JLabel date_L;
+    private javax.swing.JLabel stocks_L1;
     // End of variables declaration//GEN-END:variables
 }
