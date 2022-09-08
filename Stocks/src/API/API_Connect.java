@@ -1,4 +1,3 @@
-
 package API;
 
 /**
@@ -7,20 +6,12 @@ package API;
  */
 public class API_Connect {
 
+    public void ConnectStockAPI(String stock) {
 
-    
-    public void ConnectAPI() {
-        
-        
-        
-        
-        
     }
-    
-    
-    
-    
-    
-    
-    
+
+    public void ConnectStockCrypto(String crypto) {
+
+    }
+
 }
