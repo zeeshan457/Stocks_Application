@@ -9,7 +9,8 @@ import java.awt.Point;
 public class Launcher {
 
     /**
-     * @param args the command line arguments
+     * 
+     * @param args 
      */
     public static void main(String args[]) {
 
@@ -35,10 +36,11 @@ public class Launcher {
         Main GUI = new Main();
 
         // Configs to the instance
-        GUI.setTitle("Main Menu");
-        GUI.setLocation(new Point(500, 150));
+        GUI.setTitle("MAIN");
+        GUI.setLocation(new Point(200, 100));
         GUI.setVisible(true);
         GUI.setResizable(false);
+        
 
     }
 }
