@@ -31,7 +31,7 @@
           </Group>
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="147" max="-2" attributes="0"/>
-              <Component id="jScrollPane1" min="-2" pref="340" max="-2" attributes="0"/>
+              <Component id="jScrollPane1" min="-2" pref="377" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
@@ -54,7 +54,7 @@
           </Group>
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace pref="71" max="32767" attributes="0"/>
+                  <EmptySpace pref="67" max="32767" attributes="0"/>
                   <Component id="Main_P" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
@@ -75,10 +75,10 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace pref="361" max="32767" attributes="0"/>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace pref="342" max="32767" attributes="0"/>
                   <Component id="stocks_L1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="224" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="243" max="-2" attributes="0"/>
                   <Component id="date_L" min="-2" pref="103" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
@@ -93,11 +93,11 @@
                           <Component id="date_L" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
                           <Component id="stocks_L1" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace pref="20" max="32767" attributes="0"/>
+                  <EmptySpace pref="21" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -134,7 +134,7 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace pref="542" max="32767" attributes="0"/>
+                  <EmptySpace pref="534" max="32767" attributes="0"/>
                   <Component id="stock_P" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
@@ -142,7 +142,7 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="stock_P1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="548" max="32767" attributes="0"/>
+                      <EmptySpace pref="505" max="32767" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -178,7 +178,7 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="14" max="32767" attributes="0"/>
                       <Component id="selectcrypto_CB1" min="-2" pref="124" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jScrollPane2" min="-2" pref="344" max="-2" attributes="0"/>
@@ -191,10 +191,13 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jScrollPane2" min="-2" pref="404" max="-2" attributes="0"/>
-                          <Component id="selectcrypto_CB1" min="-2" max="-2" attributes="0"/>
+                          <Component id="jScrollPane2" pref="410" max="32767" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="selectcrypto_CB1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
                       </Group>
-                      <EmptySpace pref="8" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -295,8 +298,12 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="selectstock_CB2" min="-2" pref="120" max="-2" attributes="0"/>
-                      <EmptySpace pref="354" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="clearstock_button" min="-2" pref="76" max="-2" attributes="0"/>
+                          <Component id="selectstock_CB2" min="-2" pref="120" max="-2" attributes="0"/>
+                          <Component id="stock_button" min="-2" pref="76" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="391" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -305,7 +312,11 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                       <Component id="selectstock_CB2" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="382" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="stock_button" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="clearstock_button" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="310" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -317,19 +328,34 @@
                   <Font name="Dialog" size="14" style="0"/>
                 </Property>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="6">
+                  <StringArray count="11">
                     <StringItem index="0" value="Select Stock"/>
-                    <StringItem index="1" value="stock1"/>
-                    <StringItem index="2" value="stock2"/>
-                    <StringItem index="3" value="stock3"/>
-                    <StringItem index="4" value="stock4"/>
-                    <StringItem index="5" value="stock5"/>
+                    <StringItem index="1" value="QCOM"/>
+                    <StringItem index="2" value="CRM"/>
+                    <StringItem index="3" value="PANW"/>
+                    <StringItem index="4" value="DIS"/>
+                    <StringItem index="5" value="GXO"/>
+                    <StringItem index="6" value="BA"/>
+                    <StringItem index="7" value="MELI"/>
+                    <StringItem index="8" value="GS"/>
+                    <StringItem index="9" value="DVN"/>
+                    <StringItem index="10" value="MRO"/>
                   </StringArray>
                 </Property>
               </Properties>
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
               </AuxValues>
+            </Component>
+            <Component class="javax.swing.JButton" name="stock_button">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Show"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="clearstock_button">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Clear"/>
+              </Properties>
             </Component>
           </SubComponents>
         </Container>
@@ -351,11 +377,11 @@
             </Property>
             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
               <Table columnCount="5" rowCount="0">
-                <Column editable="true" title="Date" type="java.lang.Object"/>
-                <Column editable="true" title="Open" type="java.lang.Object"/>
-                <Column editable="true" title="Close" type="java.lang.Object"/>
-                <Column editable="true" title="Volume" type="java.lang.Object"/>
-                <Column editable="true" title="Adjusted" type="java.lang.Object"/>
+                <Column editable="true" title="Currency" type="java.lang.Object"/>
+                <Column editable="true" title="Price" type="java.lang.Object"/>
+                <Column editable="true" title="Change" type="java.lang.Object"/>
+                <Column editable="true" title="Stats" type="java.lang.Object"/>
+                <Column editable="true" title="Dividend" type="java.lang.Object"/>
               </Table>
             </Property>
             <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">

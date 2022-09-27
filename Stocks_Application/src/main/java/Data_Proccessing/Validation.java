@@ -10,9 +10,9 @@ import javax.swing.JOptionPane;
  */
 public class Validation {
 
-    public Boolean ValidateComboBox(JComboBox j) {
+    public Boolean ValidateComboBox(JComboBox options) {
 
-        if (j.equals("Select Stock") || j.equals("Select Crypto")) {
+        if (options.equals("Select Stock") || options.equals("Select Crypto")) {
             JOptionPane.showMessageDialog(null,
                     "Please Select an Option", "ERROR", JOptionPane.ERROR_MESSAGE);
             return false;

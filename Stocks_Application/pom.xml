@@ -5,23 +5,15 @@
     <artifactId>Stocks_Application</artifactId>
     <version>1.0-SNAPSHOT</version>
     
+    
+<!-- dependencies  -->
+
     <dependencies>
-      <dependency>
-        <groupId>junit</groupId>
-        <artifactId>junit</artifactId>
-        <version>3.8.1</version>
-        <scope>test</scope>
-      </dependency>
-      
         <dependency>
 	<groupId>com.yahoofinance-api</groupId>
 	<artifactId>YahooFinanceAPI</artifactId>
 	<version>3.15.0</version>
         </dependency>
-      
-      
-      
-      
     </dependencies>
     
     
