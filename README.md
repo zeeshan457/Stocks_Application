@@ -5,10 +5,10 @@ Date 07/09/2022
 Members: Zeeshan 
 
 Key features
-      View stock data based on a symbol on the GUI.
-      View crypto data based on a symbol on the GUI.
-      regulary updated data as the application uses an API.
-      Clear and proffesional display to view stock quotes.
+            View stock data based on a symbol on the GUI.
+            View crypto data based on a symbol on the GUI.
+            regulary updated data as the application uses an API.
+            Clear and proffesional display to view stock quotes.
       
 
 An application to display different stocks & cryptos
