@@ -36,8 +36,8 @@ public class Launcher {
         Main GUI = new Main();
 
         // Configs to the instance
-        GUI.setTitle("MAIN");
-        GUI.setLocation(new Point(200, 100));
+        GUI.setTitle("Stock & Crypto Application");
+        GUI.setLocation(new Point(150, 50));
         GUI.setVisible(true);
         GUI.setResizable(false);
 
