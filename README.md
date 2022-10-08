@@ -12,7 +12,7 @@ Key features:
          Clear and proffesional display to view stock quotes.
       
 
-An application to display different stocks & cryptos
+An application to display different stocks & cryptos (Yahoo Finance API)
 
 The application will have different packages for front end and back end, this will allow the application to have clear seperation and uses.
 
