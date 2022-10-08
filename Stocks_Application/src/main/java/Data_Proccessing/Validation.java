@@ -11,6 +11,11 @@ import javax.swing.table.DefaultTableModel;
  */
 public class Validation {
 
+    /**
+     *
+     * @param options
+     * @return true or false
+     */
     public Boolean ValidateComboBox(JComboBox options) {
 
         String S_options = options.getSelectedItem().toString();
@@ -25,6 +30,10 @@ public class Validation {
 
     }
 
+    /**
+     *
+     * @param table
+     */
     public void Clear(JTable table) {
 
         DefaultTableModel model = (DefaultTableModel) table.getModel();

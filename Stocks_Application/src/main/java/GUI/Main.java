@@ -5,6 +5,7 @@ import API.*;
 import Data_Proccessing.*;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -15,6 +16,7 @@ public class Main extends javax.swing.JFrame {
     // arrtributes and class calls from different packages
     API_Connect API = new API_Connect();
     Validation validate = new Validation();
+    ImageIcon icon = new ImageIcon("java/Assets/logo_uni.png");
 
     // time 
     String current_time = new SimpleDateFormat("dd/MM/yyyy").format(Calendar.getInstance().getTime());
@@ -25,6 +27,7 @@ public class Main extends javax.swing.JFrame {
     public Main() {
         initComponents();
         date_L.setText("Date: " + current_time);
+
     }
 
     /**
@@ -164,13 +167,23 @@ public class Main extends javax.swing.JFrame {
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         crypto_CB.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        crypto_CB.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select Crypto", " " }));
+        crypto_CB.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select Crypto", "BTC-USD", "ETH-USD", "USDT-USD", "USDC-USD", "BNB-USD", "XRP-USD", "BUSD-USD", "ADA-USD", "SOL-USD", "DOGE-USD", "MATIC-USD", "DOT-USD", "DAI-USD", "WTRX-USD", "SHIB-USD", "HEX-USD" }));
 
         clear_B1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         clear_B1.setText("Clear");
+        clear_B1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                clear_B1ActionPerformed(evt);
+            }
+        });
 
         show_B2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         show_B2.setText("Show");
+        show_B2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                show_B2ActionPerformed(evt);
+            }
+        });
 
         crypto_T.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         crypto_T.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
@@ -179,7 +192,7 @@ public class Main extends javax.swing.JFrame {
 
             },
             new String [] {
-                "Name", "Currency", "Exchange", "Quote", "Statistics", "Dividend"
+                "Name", "Currency", "Exchange", "Price", "Change", "Volume", "Statistics", "Dividend"
             }
         ));
         jScrollPane2.setViewportView(crypto_T);
@@ -257,6 +270,18 @@ public class Main extends javax.swing.JFrame {
     private void clear_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clear_BActionPerformed
         validate.Clear(stock_T);
     }//GEN-LAST:event_clear_BActionPerformed
+
+    private void show_B2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_show_B2ActionPerformed
+        API.GetCrypto(crypto_CB, crypto_T);
+    }//GEN-LAST:event_show_B2ActionPerformed
+
+    private void clear_B1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clear_B1ActionPerformed
+        validate.Clear(crypto_T);
+    }//GEN-LAST:event_clear_B1ActionPerformed
+
+    private void formWindowActivated(java.awt.event.WindowEvent evt) {
+        setIconImage(icon.getImage());
+    }
 
     /**
      * @param args the command line arguments
